@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationOrder">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_200"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/green_200"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_notification">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/notification_order_order"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                >
+
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/blue_dot"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:src="@drawable/profile_ship"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:tint="@color/baby_pink" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notification_order_alert"
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="60dp"
+
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/blue_dot"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_baseline_notifications_24"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:tint="@color/baby_pink" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/notification_order_deals"
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="60dp"
+
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/blue_dot"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:src="@drawable/profile_review"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:tint="@color/baby_pink" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Order"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Alert"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Deals"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/sweap_gradients"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/profile_goto_search"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_search_24"
+            android:tint="#696969"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/profile_goto_live"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_videocam_24"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/profile_goto_Home"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/app_logo_image">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/profile_goto_notification"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/notification_40"
+            android:tint="@color/baby_pink">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/profile_goto_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_person_24"
+            android:tint="#696969">
+
+        </ImageButton>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notificcation_order_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_notification_txt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="No Notification Yet "
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/green_200"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

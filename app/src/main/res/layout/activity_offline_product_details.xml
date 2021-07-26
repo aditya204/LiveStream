@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".offlineProductDetails">
+
+
+    <ScrollView
+
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/myCartPaymentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/offline_product_images" />
+
+
+            <include layout="@layout/offline_products_details_size_color_options" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="4dp"
+                android:background="#D5D5D5"
+                android:visibility="gone"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="end"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="24dp"
+                    android:textStyle="bold"
+                    android:text="Go to seller"
+                    android:textColor="@color/gray_25"
+                    android:textSize="15sp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="90dp"
+                    android:padding="2dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginVertical="7dp"
+                    android:background="@drawable/border_black_stroke"
+                    android:text="FOLLOW"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:padding="9dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:tint="@color/baby_pink"
+                    tools:ignore="ContentDescription" />
+
+
+
+            </LinearLayout>
+            <View
+                android:visibility="gone"
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#D5D5D5"
+                />
+
+
+            <include layout="@layout/grocery_product_details_description" />
+
+            <include layout="@layout/activity_review" />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/myCartPaymentLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:elevation="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/addtoGroceryCary"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ADD TO CART"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#252525"
+                android:gravity="center_vertical"
+                android:drawableTint="#252525"
+                android:drawableEnd="@drawable/ic_shopping_cart_black_24dp"
+                android:drawablePadding="8dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gotoGroceryCary"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+
+            android:background="#fff"
+
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="GO TO CART"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#DF4444"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/ic_shopping_cart_black_24dp"
+
+                android:drawableTint="#DF4444"
+                android:drawablePadding="8dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buy_now_groceryBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Buy Now"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="4dp"
+            android:textColor="#FFF"
+            android:background="@drawable/button_background"
+          />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/product_details_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/myCartPaymentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scrollView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

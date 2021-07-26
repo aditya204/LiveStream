@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/descriptionConstraintLayout"
+    android:background="#FFF"
+    android:elevation="2dp">
+
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView93"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="1dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:text="Description"
+        android:textColor="#000"
+        android:background="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/grocery_product_details_descrioption_Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView94"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView93" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/textView94"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="12dp"
+
+        android:background="#B6B6B6"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/description_ViewAll_LL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+
+        android:visibility="gone"
+        android:id="@+id/description_ViewAll_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_25"
+        android:padding="4dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="4dp"
+            android:text="View all"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_marginStart="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="4dp"
+            android:text=">"
+            android:layout_weight="1"
+
+            android:textColor="@color/white"
+
+            android:layout_marginEnd="8dp"
+            android:gravity="end"
+            android:textSize="16dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

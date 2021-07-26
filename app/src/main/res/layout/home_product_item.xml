@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="3dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sweap_gradients"
+
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/product_image"
+                android:backgroundTint="#000"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/product"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="20dp"
+
+                >
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/antic"
+            android:text="Product Name"
+            android:textColor="@color/green_200"
+            android:textSize="16dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/product_name_description"
+
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="4dp"
+            android:inputType="number"
+            android:text="about the product"
+            android:textColor="#252525"
+            android:textSize="15dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            >
+
+            <TextView
+                android:id="@+id/product_bid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:text=" USD 20"
+                android:textColor="@color/green_200"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:drawableStart="@drawable/ic_baseline_emoji_events_24"
+                android:drawableTint="@color/green_200"
+                >
+
+
+            </TextView>
+
+        <TextView
+            android:id="@+id/text_view"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="30 : 24 : 60"
+            android:textColor="#FF0000"
+            android:textSize="14dp"
+            android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

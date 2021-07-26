@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    android:id="@+id/offline_product_details_options"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Options ( Optional )"
+        android:drawableStart="@drawable/ic_baseline_adjust_24"
+        android:drawableTint="#000"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:id="@+id/offline_product_details_size_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingEnd="10dp">
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:text="Size:-"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/s_size"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:paddingVertical="2dp"
+            android:gravity="center"
+            android:background="@drawable/corner_round_image"
+            android:backgroundTint="@color/gray_e3"                    android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/m_size"
+
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:paddingVertical="2dp"
+            android:gravity="center"
+            android:background="@drawable/corner_round_image"
+            android:backgroundTint="@color/gray_e3"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/l_size"
+
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:paddingVertical="2dp"
+            android:gravity="center"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/corner_round_image"
+            android:backgroundTint="@color/gray_e3"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/xl_size"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="XL"
+            android:paddingVertical="2dp"
+            android:gravity="center"
+            android:background="@drawable/corner_round_image"
+            android:backgroundTint="@color/gray_e3"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/xxl_size"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="XXL"
+            android:paddingVertical="2dp"
+            android:gravity="center"
+            android:background="@drawable/corner_round_image"
+            android:backgroundTint="@color/gray_e3"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/offline_product_details_color_options"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:text="Colors:-"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/color_1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:gravity="center"
+            android:background="@drawable/corner_round_image"
+            android:layout_marginStart="8dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/color_2"
+
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:gravity="center"
+            android:background="@drawable/corner_round_image"
+            android:layout_marginStart="8dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/color_3"
+
+            android:layout_marginEnd="10dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:gravity="center"
+            android:background="@drawable/corner_round_image"
+            android:layout_marginStart="8dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            >
+            <TextView
+            android:id="@+id/show_selected_color"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/corner_round_image"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

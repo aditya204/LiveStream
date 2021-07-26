@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="3dp"
+    android:background="@drawable/corner_round_image"
+    android:id="@+id/myOrder_groceryLayout"
+    android:elevation="5dp"
+    android:layout_marginTop="12dp"
+    >
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/myOrder_groceryItemImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/product"
+        app:riv_corner_radius="10dp"
+         />
+
+    <TextView
+        android:id="@+id/myOrder_groceryItemName"
+        android:layout_width="0dp"
+        android:maxHeight="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="round neck t-shirt black "
+        android:textStyle="normal"
+        android:textSize="18dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/myOrder_groceryItemImage"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myOrder_groceryItemDeliveryStatus"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:text="Delivered on june 24,2019"
+        app:layout_constraintBottom_toBottomOf="@+id/myOrder_groceryItem_BlueDot"
+        app:layout_constraintEnd_toStartOf="@+id/myOrder_groceryItemImage"
+        app:layout_constraintStart_toEndOf="@+id/myOrder_groceryItem_BlueDot"
+        app:layout_constraintTop_toTopOf="@+id/myOrder_groceryItem_BlueDot" />
+
+    <LinearLayout
+        android:id="@+id/myOrder_groceryItemRatingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView100">
+
+        <ImageView
+            android:id="@+id/myOrder_star1"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/myOrder_star2"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/myOrder_star3"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/myOrder_star4"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/myOrder_star5"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_star_border_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/myOrder_WriteReviewBlank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:paddingHorizontal="12dp"
+            android:text="Write a Review"
+            android:textColor="#3F3F3F"
+            android:textSize="16dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="#D1D0D0"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <TextView
+        android:id="@+id/myOrder_groceryItem_BlueDot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blue_dot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myOrder_groceryItemDescription" />
+
+    <TextView
+        android:id="@+id/myOrder_groceryItem_GreenDot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blue_dot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myOrder_groceryItemDescription" />
+
+    <TextView
+        android:id="@+id/myOrder_groceryItem_RedDot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blue_dot"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myOrder_groceryItemDescription" />
+
+    <TextView
+        android:id="@+id/myOrder_groceryItemDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/myOrder_groceryItemImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myOrder_groceryItemName" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="OTP :-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myOrder_groceryItemDeliveryStatus" />
+
+    <TextView
+        android:id="@+id/otp_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="234763"
+        android:textStyle="italic"
+        android:textColor="#28B900"
+        app:layout_constraintBottom_toBottomOf="@+id/tv"
+        app:layout_constraintStart_toEndOf="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/myOrder_groceryItemDeliveryStatus"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

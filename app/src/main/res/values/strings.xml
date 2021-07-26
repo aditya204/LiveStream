@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">UlaLive</string>
+    <string name="seller_name">SELLER_NAME</string>
+    <string name="add_to_favourites">Add To Favourites</string>
+    <string name="add_to_cart">Add To Cart</string>
+</resources>

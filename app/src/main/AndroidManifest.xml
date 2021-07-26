@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quantum.mystreamingapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyStreamingApp">
+        <activity android:name=".AdminOrderProduct"></activity>
+        <activity android:name=".AdminConfirmedOrder" />
+        <activity android:name=".AdminPendingOrders" />
+        <activity android:name=".Favourite" />
+        <activity android:name=".SearchedProduct" />
+        <activity android:name=".Search" />
+        <activity android:name=".NotificationDeal" />
+        <activity android:name=".NotificationAlert" />
+        <activity android:name=".NotificationOrder" />
+        <activity android:name=".TimeDate" />
+        <activity android:name=".Address" />
+        <activity android:name=".MyAddress" />
+        <activity android:name=".Live" />
+        <activity android:name=".AddProductDetails" />
+        <activity android:name=".AddProductCategory" />
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".PreLogin"
+            android:theme="@style/Theme.SIGNUP" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OrderDetails" />
+        <activity android:name=".Orders" />
+        <activity android:name=".Cart" />
+        <activity android:name=".offlineProductDetails" />
+        <activity android:name=".offline_products" />
+        <activity
+            android:name=".OfflineHome"
+            android:theme="@style/Theme.SIGNUP" />
+        <activity android:name=".ProductsDetaials" />
+        <activity android:name=".HomeMain" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
+        <activity android:name=".player_recycler" />
+        <activity android:name=".player" />
+        <activity android:name=".MainActivity" />
+    </application>
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

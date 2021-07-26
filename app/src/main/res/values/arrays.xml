@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preloaded_fonts">preloaded_fonts
+
+        <item>@font/antic</item>
+        <item>@font/bungee</item>
+    </string-array>
+</resources>

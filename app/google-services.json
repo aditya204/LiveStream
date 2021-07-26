@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1389094666",
+    "project_id": "iqualive",
+    "storage_bucket": "iqualive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1389094666:android:2580ca2882d5fab3f43cf3",
+        "android_client_info": {
+          "package_name": "com.quantum.hadigunn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1389094666-bjghq0riaraihu2bfchofu8b0v1rgdv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChmHVzsyDb4EyrtbD8y_GLakiQu2WA-wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1389094666-bjghq0riaraihu2bfchofu8b0v1rgdv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1389094666:android:a9f00d4a7e03f66cf43cf3",
+        "android_client_info": {
+          "package_name": "com.quantum.mystreamingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1389094666-bjghq0riaraihu2bfchofu8b0v1rgdv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChmHVzsyDb4EyrtbD8y_GLakiQu2WA-wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1389094666-bjghq0riaraihu2bfchofu8b0v1rgdv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

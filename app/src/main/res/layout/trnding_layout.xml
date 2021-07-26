@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+
+    android:id="@+id/grid_CL"
+    android:elevation="2dp"
+    android:background="@drawable/corner_round_image"
+    android:backgroundTint="#8DF0C9"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/trending_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="#Trending"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/trending_gridview"
+
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_height="250dp"
+
+        android:layout_marginTop="24dp"
+        android:background="#d9d9d9"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trending_title"
+        app:layout_constraintVertical_bias="1.0">
+
+    </GridView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginVertical="10dp"
+    android:background="#E6FDFF"
+    android:id="@+id/bill_ll"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TextView
+
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Item Total"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="345"
+        android:textSize="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Charges"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView131"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+
+        android:text="Discounts"
+        android:textSize="16dp"
+        android:textColor="#00A700"
+
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/taxChargesPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/itemTotalPrice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/itemTotalPrice"
+        app:layout_constraintTop_toBottomOf="@+id/itemTotalPrice" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Grand Total"
+        android:textColor="#292828"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/discount_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="43"
+        android:visibility="gone"
+        android:textColor="#00A700"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/taxChargesPrice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/taxChargesPrice"
+        app:layout_constraintTop_toBottomOf="@+id/taxChargesPrice" />
+
+
+    <TextView
+        android:id="@+id/grandTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="743"
+        android:textColor="#292828"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/taxChargesPrice"
+        app:layout_constraintTop_toBottomOf="@+id/discount_price"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="RM "
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemTotalPrice"
+        app:layout_constraintEnd_toStartOf="@+id/itemTotalPrice"
+        app:layout_constraintTop_toTopOf="@+id/itemTotalPrice" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="Rs."
+        android:visibility="gone"
+
+        android:textSize="16dp"
+        android:textColor="#00A700"
+
+        app:layout_constraintBottom_toBottomOf="@+id/discount_price"
+        app:layout_constraintEnd_toStartOf="@+id/discount_price"
+        app:layout_constraintTop_toTopOf="@+id/discount_price" />
+
+    <TextView
+        android:id="@+id/textView450"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM "
+        android:textColor="#292828"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/grandTotalPrice"
+        app:layout_constraintEnd_toStartOf="@+id/grandTotalPrice"
+        app:layout_constraintTop_toTopOf="@+id/grandTotalPrice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="RM "
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/taxChargesPrice"
+        app:layout_constraintEnd_toStartOf="@+id/taxChargesPrice"
+        app:layout_constraintTop_toTopOf="@+id/taxChargesPrice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

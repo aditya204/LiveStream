@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/border_black_stroke"
+    android:layout_margin="12dp"
+    android:id="@+id/address_layout"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+
+        android:text="Kindly,check the address brfore order !"
+        android:textColor="#DF4444"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/grocery_cart_address_name"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingRight="3dp"
+        android:text="Aditya Kumar"
+        android:textColor="#000"
+        android:textSize="14dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView79"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+
+    <TextView
+        android:id="@+id/grocery_cart_address_hostel_room"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="40dp"
+        android:paddingRight="3dp"
+        android:text="Rudra Hostle,C303"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/grocery_cart_address_editTxt"
+        app:layout_constraintStart_toStartOf="@+id/grocery_cart_address_name"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_cart_address_name" />
+
+    <TextView
+        android:id="@+id/grocery_cart_address_phone"
+        android:layout_width="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:paddingRight="3dp"
+        android:text="9546796020"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/grocery_cart_address_hostel_room"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_cart_address_hostel_room" />
+
+    <TextView
+        android:id="@+id/grocery_cart_address_editTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:drawableTint="#DF4444"
+        android:drawableEnd="@drawable/ic_edit_black_24dp"
+        android:gravity="center"
+        android:padding="4dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/grocery_cart_address_type"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#D8D6D6"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="1dp"
+        android:text="HOME"
+        android:textColor="#444444"
+        android:textSize="11dp"
+        app:layout_constraintStart_toEndOf="@+id/grocery_cart_address_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

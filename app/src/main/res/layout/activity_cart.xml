@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/cart_activity"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_background_color"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PaymentLayout"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <include layout="@layout/address_layout" />
+
+                <include layout="@layout/grocery_cart_product_recycler" />
+
+                <include layout="@layout/pick_up_store"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_backgroud"
+                    android:layout_margin="12dp"
+                    app:layout_constraintBottom_toTopOf="@+id/PaymentLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:background="#BFE9B6"
+
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:textColor="#006323"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="YOU SAVED TOTAL"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/grocery_cart_totalSave"
+                        android:textColor="#006323"
+                        android:textStyle="bold"
+
+                        android:background="#BFE9B6"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="₹ 560"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+
+                <include layout="@layout/activity_mycart_bill" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#FFF"
+                    android:layout_height="100dp">
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/PaymentLayout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:elevation="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/addtoGroceryCary"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_weight="1"
+
+            >
+
+            <TextView
+                android:id="@+id/grocery_cart_payAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹ 20000"
+                android:layout_marginStart="18dp"
+                android:textSize="20sp"
+                android:textColor="#252525"
+
+                android:gravity="center_vertical"
+                android:drawableTint="#252525"
+                android:drawablePadding="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View price Details"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#DF4444"
+
+                android:layout_marginStart="18dp"
+                android:gravity="center_vertical"
+                android:drawableTint="#252525"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_marginEnd="10dp"
+            android:id="@+id/myCartGroceryPayinCashPayment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order Now"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="@color/green_200"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/no_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="56dp"
+        android:background="#fff"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Items in the CART"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="center_horizontal"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
